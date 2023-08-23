@@ -48,6 +48,10 @@ header {
     text-decoration: underline;
 }
 
+@media screen and (max-width: 500px){
+    .nav ul li a {
+        font-size: .75rem;
+}
 
 /* Main Content */
 
