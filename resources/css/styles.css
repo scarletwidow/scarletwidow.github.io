@@ -48,16 +48,15 @@ header {
     text-decoration: underline;
 }
 
-/*Media Queries*/
 @media screen and (max-width: 500px){
     header {
         justify-content: flex-start; 
     }
     .nav ul li a {
-        font-size: .5rem;
+        font-size: .75rem;
     }
     .nav ul li a:hover{
-        font-size: .65rem;
+        font-size: 1rem;
     }
 }
 
