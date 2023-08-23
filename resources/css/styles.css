@@ -1,0 +1,251 @@
+/* Universal Styles */
+html {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #dedbd285;
+}
+
+.img-container img {
+    width: 95%;
+    height: 95%;
+}
+
+h1 {
+    font-family: 'Lilita One', cursive;
+    font-size: 5rem;
+    text-align: center;
+    color: #4a5759;
+    margin: 1.5rem;
+}
+
+
+/* Header */
+
+header {
+    background-color: #edafb8;
+    color: #f7e1d7;
+    height: 5rem;
+}
+
+.nav ul {
+    height: 5rem;
+    display: flex;
+    font-size: 1.35rem;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav ul li a {
+    margin: 1rem;
+    color: #f7e1d7;
+}
+
+.nav ul li a:hover{
+    color: #4a5759;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+
+/* Main Content */
+
+section {
+    /* border: 2px solid seagreen; */
+    height: 55%;
+    width: 99%;
+    margin: 1rem auto;
+}
+
+#about, #meetings, #lesson, #contact {
+    /* border:2px solid yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 95%;
+    padding: .5rem;
+    color: #95ae96;
+}
+
+.img-container{
+    /* border: 2px solid blue; */
+    width: 50%;
+    height: 95%;
+}
+
+.img-container figcaption {
+    text-align: center;
+    color: #95ae96;
+    margin-top: .25rem;
+}
+
+.info h2 {
+    font-size: 2.5rem;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+.info p {
+    font-size: 1.2rem;
+    line-height: 1.25;
+}
+
+
+/* Media Queries  */
+
+@media screen and (max-width: 885px) {
+    html {
+    background-image: linear-gradient(to bottom, #acc5ac, #fff);
+    }
+
+    #about, #lesson, #meetings {
+        margin: .5rem auto;
+        border: .15rem solid #95ae96;
+    }
+
+    #contact .info {
+        flex-direction: column;
+        justify-content: space-around;
+        border: none;
+    }
+
+    .info {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: space-between;
+        width: 95%;
+        padding: 1rem;
+        margin: .5rem auto;
+    }
+
+
+    .info h2 {
+        width: 50%;
+        text-align: center;
+        text-decoration: none;
+        padding: 1rem;
+        margin: .75rem;
+        border-radius: 2rem;
+    }
+
+
+    #contact .info h2 {
+        background-color: inherit;
+        text-decoration: underline;
+    }
+
+    .info p {
+        width: 50%;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    #contact .info p {
+        background-color: inherit;
+    }
+
+    .img-container {
+            display: none;
+    }
+}
+
+@media screen and (max-width: 705px) {
+    #about, #lesson, #meetings {
+        background-image: none;
+        border: .15rem solid #95ae96;
+        margin: .5rem auto;
+        width: 95%;
+    }
+
+    .info {
+        padding: .5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+
+    .info h2 {
+        font-size: 2.15rem;
+        text-decoration: underline; 
+    }
+
+    .info p {
+        font-size: 1rem;
+        width: 75%;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info h2 {
+        font-size: 2rem;
+        text-decoration: underline;
+    }
+
+    .info p {
+        font-size: .85rem;
+        font-weight:700;
+        line-height: 1.2;
+        width: 75%;
+    }
+}
+
+/* Footer  */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:  3rem;
+    padding: 1rem;
+    background-color: #e79f9f;
+    color: #f7e1d7 ;
+}
+
+footer a {
+    color: #f5c7e9;
+}
+
+footer a:hover {
+    color: #4a5759;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 885px) {
+    footer {
+        text-align: center;
+    }
+
+    footer p {
+        padding: .5rem;
+    }
+
+    footer p:nth-child(even){
+        border-left: 2px solid #f7e1d7;
+        border-right: 2px solid #f7e1d7;
+    }
+}
+
+@media screen and (max-width: 705px) {
+    #contact strong {
+        color: #4a5759;
+    }
+}
