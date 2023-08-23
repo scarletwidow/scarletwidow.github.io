@@ -48,9 +48,13 @@ header {
     text-decoration: underline;
 }
 
+/*Media Queries*/
 @media screen and (max-width: 500px){
     .nav ul li a {
         font-size: .5rem;
+    }
+    .nav ul li a:hover{
+        font-size: .65rem;
     }
 }
 
