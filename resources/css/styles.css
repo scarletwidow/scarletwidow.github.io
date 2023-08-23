@@ -25,6 +25,7 @@ header {
     background-color: #edafb8;
     color: #f7e1d7;
     height: 5rem;
+    width: 100%;
 }
 
 .nav ul {
@@ -47,7 +48,6 @@ header {
     font-size: 1.5rem;
     text-decoration: underline;
 }
-
 
 /* Main Content */
 
@@ -232,6 +232,7 @@ footer a:hover {
 @media screen and (max-width: 885px) {
     footer {
         text-align: center;
+        margin: 0;
     }
 
     footer p {
